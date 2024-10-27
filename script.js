@@ -11,15 +11,16 @@ const reguaMax = 120;
 const ptsMax = 30;
 
 //CALCULA PONTOS PROPORCIONAIS AOS 30 PONTOS
-const pts = Math.floor((ptsMax*porcentagem)/reguaMax);
-document.getElementById("pontuacao").textContent = pts.toFixed(0) + ",00/30,00 máx";
+const pts = (ptsMax*porcentagem)/reguaMax;
+console.log(pts);
+document.getElementById("pontuacao").textContent = pts.toFixed(2).replace('.',',') + "/30,00 máx";
 
 //INSERE OS LOUROS QUANDO ATINGIDA A RÉGUA MÁXIMA
 if (porcentagem >= 120){
     document.getElementById("circle").style.display = "none";       
     document.getElementById("louros").style.display = "block";
 } else {
-    document.getElementById("pontuacao").textContent = pts.toFixed(0) + ",00/30,00 máx";
+    document.getElementById("pontuacao").textContent = pts.toFixed(2).replace('.',',') + "/30,00 máx";
     document.getElementById("louros").style.display = "none";      
 }
 

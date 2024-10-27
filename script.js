@@ -15,6 +15,10 @@ const pts = (ptsMax*porcentagem)/reguaMax;
 console.log(pts);
 document.getElementById("pontuacao").textContent = pts.toFixed(2).replace('.',',') + "/30,00 máx";
 
+if (pts >=30){
+    document.getElementById("pontuacao").textContent = "30,00/30,00 máx";
+}
+
 //INSERE OS LOUROS QUANDO ATINGIDA A RÉGUA MÁXIMA
 if (porcentagem >= 120){
     document.getElementById("circle").style.display = "none";       

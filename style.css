@@ -22,6 +22,11 @@ main{
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    position: relative;
+    text-align: center;
+    margin: 20px;
 }
 
 #master-container{
@@ -38,10 +43,16 @@ main{
     width: 300px;
 }
 
-#title{
-    font-weight: bold;
-    font-size: 1em;
+
+
+#title-mensal{
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 10px;
     text-align: center;
     margin: 20px;
 }

@@ -29,6 +29,18 @@ main{
     margin: 20px;
 }
 
+#title-mensal{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
 #master-container{
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
@@ -45,17 +57,6 @@ main{
 
 
 
-#title-mensal{
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: bold;
-    font-size: 0.8em;
-    position: relative;
-    bottom: 10px;
-    text-align: center;
-    margin: 20px;
-}
 
 #pontos-container{
     display: flexbox;

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+    <title>Negócios</title>
+</head>
+<body>
+    <main>
+        <div id="title">Mobilização de Estudos</div>
+        <div id="master-container">
+            <div id="title">Estudos + Leitura</div>
+            <div id="pontos-container">          
+                <div id="pontos">Pontos</div>
+                <div id="pontuacao">0,00/30,00 máx</div>
+                <div id="peso">Peso</div>
+                <div id="peso-porcento">100,00%</div>
+            </div>
+            <div id="chart-container">
+                <div id="atingimento">Atingimento</div>
+                <img id="louros" src="img/louros.jpg" alt="Meta entregue!"/>
+                <div id="circle">
+                    <svg width="250" height="250">
+                        <circle class="bg" r="30" cx="88" cy="45" fill="none" stroke="lightgray" stroke-width="7"></circle>
+                        <circle class="fg" id="circulo-progresso" r="30" cx="88" cy="45" fill="none" stroke="red" stroke-width="7" stroke-dasharray="0 188.4"></circle>
+                    </svg>
+                </div>
+                <div id="atingimento-percentage">0%</div>
+                <!--*********************************************************************************************
+                                            INSERIR CIRCLE CHART AQUI
+                    *********************************************************************************************-->
+            </div>
+            <div id="meta-container">
+                <div id="meta-bg">
+                    <span id="meta-title">Meta</span>
+                </div>
+                <div id="mensal-meta">Mensal</div>
+                <div id="mensal-meta-pts">22,00 pts</div>
+                <div id="meta-vertical"></div>
+            </div>
+            <div id="realizado-container">
+                <div id="realizado-bg">
+                    <span id="realizado-title">Realizado</span>
+                </div>
+                <div id="realizado-meta">Mensal</div>
+                <div id="realizado-meta-pts">0,00 pts</div>
+                <div id="realizado-vertical"></div>
+                <div id="realizado-horizontal"></div>
+            </div>
+        </div>
+        <div id="artigo-wrapper">
+            <div id="artigo-text">
+                <p>Para cada dia de estudo, será adicionado 1 ponto ao indicador.</p>
+                <p>Serão considerados os dias em que haja leitura ou estudo por, no mínimo, 30 minutos.</p>
+                <p>Não há restrições quanto a tema ou material que venha a ser objeto do estudo.</p>
+                <p style="font-weight: bold;">Régua Máxima: 120%</p>
+            </div>
+        </div>  
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

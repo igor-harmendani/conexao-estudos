@@ -1,0 +1,287 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+main{
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper{
+    height: 100%;
+    width: 100%;
+    display: flexbox;
+}
+
+#title{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#master-container{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 1em;
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+#pontos-container{
+    display: flexbox;
+    float: left;
+    position: relative;
+    top: 60px;
+    height: 100px;
+    width: 150px;
+}
+
+#pontos{
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-left: 10px;
+    margin-top: 5px;
+    position: relative;
+}
+
+#pontuacao{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 15px
+}
+
+#peso{
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 30px;
+}
+
+#peso-porcento{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 45px;
+
+}
+
+/*CHART*/
+
+#chart-container{
+    display: flexbox;
+    position: relative;
+    top: 60px;
+    height: 100px;
+    width: 150px;
+    float: right;
+}
+
+#atingimento{
+    text-align: right;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-right: 20px;
+}
+
+circle.fg{
+    transform: rotate(-90deg);
+    transform-origin: 88px 45px;
+}
+
+#atingimento-percentage{
+    width: 102px;
+    position: absolute;
+    font-size: 1.075em;
+    align-items: center;
+    text-align: center;
+    bottom: 30px;
+    left: 38px
+}
+
+#louros{
+    position: absolute;
+    width: 75px;
+    top: 30px;
+    left: 50px;
+    z-index: -1;
+}
+
+#meta-container{
+    position: relative;
+    top: 180px;
+    height: 60px;
+}
+
+#meta-bg{
+    height: 20px;
+    border-top: 1px solid rgb(172, 172, 172);
+    border-bottom: 1px solid rgb(172, 172, 172);
+    background-color: rgb(235, 235, 235);
+    margin: 5px;
+}
+
+#meta-title{
+    position: absolute;
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 0.75em;
+    top:4px;
+    left: 10px;
+}
+
+
+#mensal-meta{
+    position: relative;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin:15px;
+    bottom: 75px;
+    margin-left: 10px
+}
+
+
+#mensal-meta-pts{
+    position: relative;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin:15px;
+    bottom: 87px;
+    margin-left: 10px
+}
+
+/*REALIZADO*/
+
+#realizado-container{
+    position: relative;
+    top: 175px;
+    height: 100px;
+}
+
+#realizado-bg{
+    height: 20px;
+    border-top: 1px solid rgb(172, 172, 172);
+    border-bottom: 1px solid rgb(172, 172, 172);
+    background-color: rgb(235, 235, 235);
+    margin: 5px;
+}
+
+#realizado-title{
+    position: absolute;
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 0.75em;
+    top:4px;
+    left: 10px;
+}
+
+
+#realizado-meta{
+    position: relative;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin:15px;
+    bottom: 11px;
+    margin-left: 10px
+}
+
+
+#realizado-meta-pts{
+    position: relative;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin:15px;
+    bottom: 23px;
+    margin-left: 10px
+}
+
+#meta-vertical{
+    position: relative;
+    left: 150px;
+    bottom: 136px;
+    align-items: center;
+    border-left: 1px solid rgb(172, 172, 172);
+    height: 40px;
+}
+
+#realizado-vertical{
+    position: relative;
+    left: 150px;
+    bottom: 72px;
+    align-items: center;
+    border-left: 1px solid rgb(172, 172, 172);
+    height: 40px;
+}
+
+#realizado-horizontal{
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    bottom: 72px;
+    align-items: center;
+    border-top: 1px solid rgb(172, 172, 172);
+    width: 97%;
+}
+
+#artigo{
+    position: relative;
+    top: 150px;
+    left: 10px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+#artigo a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+  
+}
+
+#regua, #regras{
+    position: relative;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+
+#artigo-text{
+    float: le;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+    margin-top: 100px;
+}

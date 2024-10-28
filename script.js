@@ -12,7 +12,7 @@ const realizadoGet = async() => {
             realizadoPlanilha = parseFloat(data.values[0][0]);
         })
         .catch(error => console.error('Erro ao acessar planilha:', error));
-    return realizadoPlanilha;
+    return realizadoPlanilha ? realizadoPlanilha.toFixed(2):null;
 }
 
 const main = async () => {
@@ -57,7 +57,8 @@ const main = async () => {
 
     //PONTUAÇÃO MENSAL REALIZADA
 
-    document.getElementById("realizado-meta-pts").textContent = realizado.toFixed(2).replace('.',',') + " pts";
+    document.getElementById("realizado-meta-pts").textContent = realizado.replace('.',',') + " pts";
+    console.log(realizado);
     /*CÁLCULO DO FILL DO CÍRCULO
     O raio da circunferência é 188.4 (r=30, circ = 2*pi*r). É necessário obter os valores da área a ser preenchida e da área vazia.
     O const fill calcula quanto o círculo será preenchido. O const empty subtrai a circuferência do valor do fill,

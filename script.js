@@ -19,7 +19,7 @@ const main = async () => {
     const realizado = await realizadoGet();
 
     //DEFINIÇÕES
-    const meta = 22;
+    const meta = 5;
     const porcentagem = (realizado / meta)*100;
     const reguaMax = 120;
     const ptsMax = 30;
@@ -44,7 +44,7 @@ const main = async () => {
     //MUDA COR DO CÍRCULO
     if (porcentagem >= 95 ){
         document.getElementById("circulo-progresso").setAttribute("stroke", "green");
-    } else if (porcentagem >= 80){
+    } else if (porcentagem >= 70){
         document.getElementById("circulo-progresso").setAttribute("stroke", "orange");
     }
 

@@ -22,6 +22,7 @@ const main = async () => {
     /******************ALTERAR LINHA ABAIXO*************************************/
     const meta = 20;
     /******************ALTERAR LINHA ACIMA**************************************/
+    document.getElementById("mensal-meta-pts").textContent = meta.toFixed(2).replace('.',',');
     const porcentagem = (realizado / meta)*100;
     const reguaMax = 120;
     const ptsMax = 30;

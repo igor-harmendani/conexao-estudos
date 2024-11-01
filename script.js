@@ -19,7 +19,9 @@ const main = async () => {
     const realizado = await realizadoGet();
 
     //DEFINIÇÕES
-    const meta = 5;
+    /******************ALTERAR LINHA ABAIXO*************************************/
+    const meta = 20;
+    /******************ALTERAR LINHA ACIMA**************************************/
     const porcentagem = (realizado / meta)*100;
     const reguaMax = 120;
     const ptsMax = 30;

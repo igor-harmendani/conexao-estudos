@@ -7,7 +7,6 @@ body{
 }
 
 main{
-    display: inline;
     width: 100%;
     height: 100%;
 }
@@ -15,7 +14,8 @@ main{
 #wrapper{
     height: 100%;
     width: 100%;
-    display: flexbox;
+    display: flex;
+
 }
 
 #title{
@@ -27,6 +27,14 @@ main{
     position: relative;
     text-align: center;
     margin: 20px;
+}
+
+#pontuacao-geral{
+    color: #5F9EFE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em;
 }
 
 #title-mensal{
@@ -41,20 +49,28 @@ main{
     margin: 20px;
 }
 
-#master-container{
+#master-container, #master-container2{
+    display: block;
+    float: left;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     top: 30px;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 10px;
     border-radius: 10px;
     border: 1px solid black;
     height: 400px;
     width: 300px;
 }
 
+#master-wrapper{
+    position: relative;
+    bottom: 100px;
+    width: 650px;
+    margin: auto;
+}
 
 
 
@@ -75,7 +91,7 @@ main{
     position: relative;
 }
 
-#pontuacao{
+#pontuacao, #pontuacao2{
     font-weight: bold;
     font-size: 0.9em;
     margin-top: 20px;
@@ -126,7 +142,8 @@ circle.fg{
     transform-origin: 88px 45px;
 }
 
-#atingimento-percentage{
+
+#atingimento-percentage, #atingimento-percentage2{
     width: 102px;
     position: absolute;
     font-size: 1.075em;
@@ -136,7 +153,7 @@ circle.fg{
     left: 38px
 }
 
-#louros{
+#louros, #louros2{
     position: absolute;
     width: 75px;
     top: 30px;
@@ -149,6 +166,9 @@ circle.fg{
     top: 180px;
     height: 60px;
 }
+
+
+
 
 #meta-bg{
     height: 20px;
@@ -178,7 +198,7 @@ circle.fg{
 }
 
 
-#mensal-meta-pts{
+#mensal-meta-pts, #mensal-meta-pts2{
     position: relative;
     font-size: 0.85em;
     font-weight: bold;
@@ -223,7 +243,7 @@ circle.fg{
 }
 
 
-#realizado-meta-pts{
+#realizado-meta-pts, #realizado-meta-pts2{
     position: relative;
     font-size: 0.85em;
     font-weight: bold;
@@ -260,12 +280,10 @@ circle.fg{
     width: 97%;
 }
 
-#artigo{
+#artigo-wrapper{
+    font-size: 1em;
     position: relative;
-    top: 150px;
-    left: 10px;
-    font-size: 0.7em;
-    font-weight: bold;
+    top: 100px
 }
 
 #artigo a{

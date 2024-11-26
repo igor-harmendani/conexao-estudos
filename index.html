@@ -9,15 +9,17 @@
 </head>
 <body>
     <main>
-        <div id="title">Mobilização de Estudos</div>
+        <div id="title">Mobilização</div>
         <div id="title-mensal">(Mensal)</div>
+        <div id="pontuacao-geral">Pontuação Geral: 600</div>
+        <div id="master-wrapper">
         <div id="master-container">
             <div id="title">Estudos + Leitura</div>
             <div id="pontos-container">          
                 <div id="pontos">Pontos</div>
-                <div id="pontuacao"></div>
+                <div id="pontuacao">0,00/0,00 máx</div>
                 <div id="peso">Peso</div>
-                <div id="peso-porcento">100,00%</div>
+                <div id="peso-porcento">60,00%</div>
             </div>
             <div id="chart-container">
                 <div id="atingimento">Atingimento</div>
@@ -48,6 +50,44 @@
                 <div id="realizado-horizontal"></div>
             </div>
         </div>
+        <div id="master-container2">
+            <div id="title">Trintena</div>
+            <div id="pontos-container">          
+                <div id="pontos">Pontos</div>
+                <div id="pontuacao2">0,00/0,00 máx</div>
+                <div id="peso">Peso</div>
+                <div id="peso-porcento">40,00%</div>
+            </div>
+            <div id="chart-container">
+                <div id="atingimento">Atingimento</div>
+                <img id="louros2" src="img/louros.jpg" alt="Meta entregue!"/>
+                <div id="circle2">
+                    <svg width="250" height="250">
+                        <circle class="bg" r="30" cx="88" cy="45" fill="none" stroke="lightgray" stroke-width="7"></circle>
+                        <circle class="fg" id="circulo-progresso2" r="30" cx="88" cy="45" fill="none" stroke="red" stroke-width="7" stroke-dasharray="0 188.4"></circle>
+                    </svg>
+                </div>
+                <div id="atingimento-percentage2">0%</div>
+            </div>
+            <div id="meta-container">
+                <div id="meta-bg">
+                    <span id="meta-title">Meta</span>
+                </div>
+                <div id="mensal-meta">Mensal</div>
+                <div id="mensal-meta-pts2">0,00 pts</div>
+                <div id="meta-vertical"></div>
+            </div>
+            <div id="realizado-container">
+                <div id="realizado-bg">
+                    <span id="realizado-title">Realizado</span>
+                </div>
+                <div id="realizado-meta">Mensal</div>
+                <div id="realizado-meta-pts2">0,00 pts</div>
+                <div id="realizado-vertical"></div>
+                <div id="realizado-horizontal"></div>
+            </div>
+        </div>
+        
         <div id="artigo-wrapper">
             <div id="artigo-text">
                 <p>Para cada dia de estudo, será adicionado 1 ponto ao indicador.</p>
@@ -58,7 +98,8 @@
                 <p>Não há restrições quanto a tema ou material que venha a ser objeto do estudo.</p>
                 <p style="font-weight: bold;">Régua Máxima: 120%</p>
             </div>
-        </div>  
+        </div>
+    </div>
     </main>
     <script type="text/javascript" src="script.js"></script>
 </body>

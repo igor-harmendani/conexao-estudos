@@ -34,7 +34,7 @@ const main = async () => {
     //DEFINIÇÕES
     /******************ALTERAR LINHA ABAIXO*************************************/
     const meta = 20;
-    const metaTrint = 6;
+    const metaTrint = 5;
     /******************ALTERAR LINHA ACIMA**************************************/
 
     

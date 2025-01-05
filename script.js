@@ -34,7 +34,7 @@ const main = async () => {
     //DEFINIÇÕES
     /******************ALTERAR LINHA ABAIXO*************************************/
     const meta = 21;
-    const metaTrint = 19.17;
+    const metaTrint = 20;
     /******************ALTERAR LINHA ACIMA**************************************/
 
     
@@ -43,6 +43,7 @@ const main = async () => {
     
     const porcentagem = (realizado / meta)*100;
     const porcentagemTrint = (realizadoTrint / metaTrint)*100;
+    console.log(porcentagemTrint)
     const reguaMax = 120;
     const ptsMax = 360;
     const ptsMaxTrint = 240;
@@ -117,6 +118,7 @@ const main = async () => {
     obtendo o valor da área vazia.*/
     const circunference = 188.4;
     const fill = circunference*(porcentagem/100);
+    console.log(porcentagem)
     const fillTrint = circunference*(porcentagemTrint/100);
     const empty = circunference-fill;
     const emptyTrint = circunference-fillTrint;

@@ -15,7 +15,6 @@ main{
     height: 100%;
     width: 100%;
     display: flex;
-
 }
 
 #title{
@@ -49,7 +48,7 @@ main{
     margin: 20px;
 }
 
-#master-container, #master-container2{
+#master-container, #master-container2, #master-container3{
     display: block;
     float: left;
     position: relative;
@@ -66,13 +65,15 @@ main{
 }
 
 #master-wrapper{
+    display: flex;
     position: relative;
     bottom: 100px;
-    width: 650px;
+    width: 100%;
     margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 50px
 }
-
-
 
 #pontos-container{
     display: flexbox;
@@ -91,7 +92,7 @@ main{
     position: relative;
 }
 
-#pontuacao, #pontuacao2{
+#pontuacao, #pontuacao2, #pontuacao3{
     font-weight: bold;
     font-size: 0.9em;
     margin-top: 20px;
@@ -116,7 +117,6 @@ main{
     margin-left: 10px;
     position: relative;
     bottom: 45px;
-
 }
 
 /*CHART*/
@@ -143,7 +143,7 @@ circle.fg{
 }
 
 
-#atingimento-percentage, #atingimento-percentage2{
+#atingimento-percentage, #atingimento-percentage2, #atingimento-percentage3{
     width: 102px;
     position: absolute;
     font-size: 1.075em;
@@ -153,7 +153,7 @@ circle.fg{
     left: 38px
 }
 
-#louros, #louros2{
+#louros, #louros2, #louros3{
     position: absolute;
     width: 75px;
     top: 30px;
@@ -198,7 +198,7 @@ circle.fg{
 }
 
 
-#mensal-meta-pts, #mensal-meta-pts2{
+#mensal-meta-pts, #mensal-meta-pts2, #mensal-meta-pts3{
     position: relative;
     font-size: 0.85em;
     font-weight: bold;
@@ -243,7 +243,7 @@ circle.fg{
 }
 
 
-#realizado-meta-pts, #realizado-meta-pts2{
+#realizado-meta-pts, #realizado-meta-pts2, #realizado-meta-pts3{
     position: relative;
     font-size: 0.85em;
     font-weight: bold;
@@ -283,7 +283,7 @@ circle.fg{
 #artigo-wrapper{
     font-size: 1em;
     position: relative;
-    top: 100px
+    top: 10px
 }
 
 #artigo a{
